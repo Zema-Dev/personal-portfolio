@@ -1,0 +1,52 @@
+/* About.css */
+.main-about {
+  display: block;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: #ffff;
+}
+.main-about-h {
+  display: flex;
+  align-self: flex-start;
+  padding: 15px;
+}
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 1%;
+}
+.main-about-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-main .horizontal-line {
+  width: 80px;
+  height: 2px;
+  background-color: #ffd900;
+  display: flex;
+  margin-bottom: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-main .horizontal-line {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-main .horizontal-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-main .horizontal-line {
+    display: none;
+  }
+}

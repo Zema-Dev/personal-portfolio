@@ -1,0 +1,115 @@
+.main-portfolios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 50px;
+  gap: 50px 75px;
+}
+.main-portfolio-title {
+  font-size: 2rem;
+}
+.main-portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 15px;
+}
+.portfolio-item {
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio-item:hover {
+  background-color: rgba(241, 173, 71, 0.897);
+  color: blue;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-img img {
+  width: 100%;
+}
+.main-portfolio-btn {
+  background-color: rgba(241, 173, 71, 0.897);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .main-portfolios {
+    padding: 50px;
+    gap: 0px 0px;
+  }
+  .main-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  .portfolio-img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio-img img {
+    width: 100%;
+  }
+  .portfolio-item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .main-portfolios {
+    padding: 50px;
+    gap: 0px 0px;
+  }
+  .main-portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+  .portfolio-img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio-img img {
+    width: 100%;
+  }
+  .portfolio-item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+@media (max-width: 480px) {
+  .main-portfolios {
+    padding: 50px;
+    gap: 0px 0px;
+  }
+  .main-portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+  .portfolio-img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio-img img {
+    width: 100%;
+  }
+  .portfolio-item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}

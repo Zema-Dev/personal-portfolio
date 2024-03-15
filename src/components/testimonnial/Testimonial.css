@@ -34,7 +34,6 @@
   position: absolute;
   width: 50px;
   height: 2px;
-  background-color: #007bff;
   margin-right: 10px;
   left: 24%;
   top: 22%;
@@ -66,7 +65,6 @@
 .main-testimonial-trait {
   width: 20px;
   height: 2px;
-  background-color: #007bff;
   margin-right: 10px;
 }
 
@@ -75,7 +73,7 @@
 }
 
 .main-testimonial-img img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 

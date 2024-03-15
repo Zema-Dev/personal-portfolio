@@ -11,7 +11,6 @@ const Testimonial = () => {
       <div className="main-testimonial-text">
         <div className="main-testimonial-text-p">
           <div className="main-testimonial-text-para">
-            <div className="main-testimonial-para-trait"></div>
             <div className="main-testimonial-para-para">
               <p>
                 <span>The design quality,</span> flexibility, documentation and
@@ -29,7 +28,6 @@ const Testimonial = () => {
             <h2>Josef Sharon</h2>
           </div>
           <div className="main-testimonial-name-h4">
-            <div className="main-testimonial-trait"></div>
             <div className="main-testimonial-parag">
               <h4>CEO, Omisoft</h4>
             </div>

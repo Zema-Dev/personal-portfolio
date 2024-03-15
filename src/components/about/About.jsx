@@ -8,7 +8,6 @@ const About = () => {
         <h1>About</h1>
       </div>
       <div className="about-main">
-        <div className="horizontal-line"></div>
         <div className="main-about-p">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
@@ -17,7 +16,7 @@ const About = () => {
             <br /> impedit quas ea nostrum non maxime eum odit tempore in rem.
             Aliquid voluptate, molestiae, veritatis vero quis debitis, libero
             aperiam <br />
-            quisquam soluta at quasi! Hic explicabo{" "}
+            quisquam soluta at quasi! Hic explicabo
             <span>veniam eos mollitia modi maxime, vero necessitatibus </span>,
             error dolorum aliquam officia, iste pariatur cumque sit?
           </p>

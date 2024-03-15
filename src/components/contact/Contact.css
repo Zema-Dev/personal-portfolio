@@ -92,23 +92,34 @@
   width: 50%;
   margin-left: 8%;
 }
-@media screen and (max-width: 1200px) {
-  .main-contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    height: 20vh;
-  }
+@media screen and (min-width: 1025px) {
   .main-contact-title {
     position: absolute;
-    width: 50%;
+    width: 20%;
     height: 12%;
     top: -6%;
   }
   .main-contacts-icons {
     position: absolute;
     bottom: -6%;
-    width: 35%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 40vh;
+  }
+  .main-contact-title {
+    position: absolute;
+    width: 20%;
+    height: 12%;
+    top: -6%;
+  }
+  .main-contacts-icons {
+    position: absolute;
+    bottom: -6%;
   }
   .main-contact-eamil,
   .main-contact-tel,
@@ -127,17 +138,16 @@
     font-size: 15px;
   }
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .main-contact {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 20vh;
+    height: 40vh;
   }
   .main-contact-title {
     width: 50%;
     height: 12%;
-    margin-top: 5%;
   }
   .main-contacts-icons {
     position: absolute;
@@ -162,26 +172,29 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .main-contact {
     display: flex;
-    flex-direction: column;
     gap: 10px;
-    height: 20vh;
+    height: 40vh;
+    width: 200%;
   }
   .main-contact-title {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56%;
     height: 12%;
-    margin-top: 5%;
+    margin-top: 0%;
   }
   .main-contacts-icons {
     margin-top: 78%;
-    width: 35%;
+    width: 45%;
   }
   .main-contact-eamil,
   .main-contact-tel,
   .main-contact-address {
-    width: 40%;
+    width: 60%;
     height: 70px;
   }
   .main-contact-email-icon,

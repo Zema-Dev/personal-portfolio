@@ -19,7 +19,7 @@ const Portfolios = () => {
     ],
   ];
 
-  const renderPorfolios = (portfolios) => {
+  const renderPortfolios = (portfolios) => {
     return portfolios.map((portfolioRow, index) => (
       <div className="main-portfolios" key={index}>
         <div className="main-portfolio-title">
@@ -29,7 +29,12 @@ const Portfolios = () => {
           {portfolioRow.map((portfolio, index) => (
             <div className="portfolio-item" key={index}>
               <div className="portfolio-img">
-                <img src={portfolio.img} alt="" />
+                {/* Utilisez la propriété srcSet pour spécifier différentes tailles d'image */}
+                <img
+                  src={portfolio.img}
+                  alt=""
+                  srcSet={`${portfolio.img} 1x, ${portfolio.img} 2x`}
+                />
               </div>
             </div>
           ))}
@@ -40,7 +45,8 @@ const Portfolios = () => {
     ));
   };
 
-  return renderPorfolios(portfolios);
+  // Rendu des portfolios
+  return renderPortfolios(portfolios);
 };
 
 export default Portfolios;

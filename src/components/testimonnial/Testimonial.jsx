@@ -4,7 +4,7 @@ import "./Testimonial.css";
 
 const Testimonial = () => {
   return (
-    <div className="main-tesimonial">
+    <div className="main-testimonial">
       <div className="main-testimonial-title">
         <h1>Testimonial</h1>
       </div>
@@ -35,9 +35,9 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="main-testimonial-img">
-        <img src="../../../images/w1.png" alt="zema" height={550} width={357} />
+        <div className="main-testimonial-img">
+          <img src="../../../images/wn.png" alt="zema" />
+        </div>
       </div>
     </div>
   );

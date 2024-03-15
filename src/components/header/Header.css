@@ -1,5 +1,6 @@
 /* Style pour l'en-tête */
 header {
+  position: relative;
   background-color: #333333f1;
   background-image: url("../../assets/images/w2.png");
   background-repeat: no-repeat;
@@ -113,7 +114,7 @@ header {
   flex-direction: column;
   left: 94%;
   margin-left: 0%;
-  bottom: 10%;
+  bottom: 25%;
 }
 
 .contact-item {
@@ -136,53 +137,79 @@ header {
   position: absolute;
   margin-left: 45%;
 }
+/* les écrans de grande taille, comme les ordinateurs   */
 
-@media screen and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) {
   .info {
     display: flex;
-    margin-top: 10%;
   }
-  .vertical-line {
+  .navbar {
+    display: flex;
+  }
+  .search-bar {
+    display: flex;
+  }
+  .header-menu {
     display: none;
   }
+  .vertical-line {
+    top: 28%;
+  }
   .contacts {
-    display: flex;
-    margin-top: 10%;
-    margin-left: -10%;
+    top: -28%;
   }
   header {
-    height: 48vh;
+    height: 90vh;
   }
 }
-@media (min-width: 481px) and (max-width: 767px) {
+
+/* les écrans de taille moyenne, comme les tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .info {
     display: flex;
     margin-top: 10%;
   }
   .navbar {
-    display: none;
+    display: flex;
+  }
+  .search-bar {
+    display: flex;
   }
   .header-menu {
-    display: flex;
+    display: none;
   }
   .vertical-line {
     display: none;
   }
   .contacts {
-    margin-top: -18%;
-    margin-left: -7%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 35%;
+    margin-left: -50%;
   }
   header {
-    height: 45vh;
+    height: 90vh;
   }
 }
-@media screen and (max-width: 480px) {
+/* les écrans de petite taille, comme les smartphones en mode portrait */
+@media only screen and (max-width: 767px) {
   .info {
     display: flex;
-    margin-top: 10%;
+    height: 50%;
+    margin-top: 45%;
+    margin-left: -4%;
+  }
+  .info-text p {
+    font-size: 15px;
   }
   .contacts {
-    display: none;
+    display: flex;
+    margin-top: -28%;
+    margin-left: -7%;
   }
   .vertical-line {
     display: none;
@@ -197,6 +224,6 @@ header {
     display: flex;
   }
   header {
-    height: 40vh;
+    height: 90vh;
   }
 }

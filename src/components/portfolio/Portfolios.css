@@ -37,7 +37,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   color: #000000;
-  font-size: 2rem;
+  font-size: 1.0rem;
   cursor: pointer;
 }
 
@@ -74,6 +74,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%
+  }
+  .main-portfolio-title{
+    font-size: 15px;
   }
   .main-portfolio {
     display: grid;
@@ -88,7 +92,7 @@
     height: 100%;
   }
   .portfolio-img img {
-    width: 100%;
+    width: 65%;
   }
   .portfolio-item {
     height: 100%;

@@ -30,6 +30,7 @@ const Experience = () => {
             <div className="main-experience-title">
               <h2>Senior Python Developer</h2>
               <h4>Scottech, Toledo</h4>
+              <h5>2021</h5>
             </div>
             <div className="main-experience-title-text">
               <p>
@@ -59,6 +60,7 @@ const Experience = () => {
             <div className="main-experience-title">
               <h2>Senior Python Developer</h2>
               <h4>Scottech, Toledo</h4>
+              <h5>2021</h5>
             </div>
             <div className="main-experience-title-text">
               <p>

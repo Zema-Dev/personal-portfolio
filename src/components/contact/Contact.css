@@ -20,15 +20,23 @@
 }
 
 .main-contact-eamil,
-.main-contact-tel,
+.main-contact-tel {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.685);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 48%;
+  height: 40px;
+}
 .main-contact-address {
   display: flex;
   background-color: rgba(0, 0, 0, 0.685);
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  width: 45%;
-  height: 70px;
+  width: 55%;
+  height: 40px;
 }
 
 .main-contact-eamil a,
@@ -62,10 +70,11 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 20%;
   background-color: #000000;
-  height: 20%;
-  top: -48px;
+  top: -34px;
+}
+.main-contact-title h1 {
+  font-size: 1.3rem;
 }
 .main-contact-title-h {
   display: flex;
@@ -93,18 +102,16 @@
   margin-left: 8%;
 }
 @media screen and (min-width: 1025px) {
-  .main-contact-title {
-    position: absolute;
-    width: 20%;
-    height: 12%;
-    top: -6%;
-  }
   .main-contacts-icons {
     position: absolute;
     bottom: -6%;
   }
+  .contacts-item {
+    width: 5%;
+    margin-left: 9%;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main-contact {
     display: flex;
     flex-wrap: wrap;
@@ -115,11 +122,18 @@
     position: absolute;
     width: 20%;
     height: 12%;
-    top: -6%;
+    top: -7%;
+  }
+  .main-contact-title h1 {
+    font-size: 1.2rem;
   }
   .main-contacts-icons {
     position: absolute;
     bottom: -6%;
+  }
+  .contacts-item {
+    width: 5%;
+    margin-left: 9%;
   }
   .main-contact-eamil,
   .main-contact-tel,
@@ -143,59 +157,30 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 40vh;
+    height: 30vh;
   }
   .main-contact-title {
-    width: 50%;
-    height: 12%;
+    height: 10%;
+    margin-top: 3.5%;
+  }
+  .main-contact-title h1 {
+    font-size: 1.2rem;
   }
   .main-contacts-icons {
     position: absolute;
     bottom: -6%;
-    width: 30%;
+    width: 33%;
+    height: 2%;
+  }
+  .contacts-item {
+    width: 5%;
+    margin-left: 9%;
   }
   .main-contact-eamil,
   .main-contact-tel,
   .main-contact-address {
-    width: 40%;
-    height: 70px;
-  }
-  .main-contact-email-icon,
-  .main-contact-tel-icon,
-  .main-contact-address-icon {
-    display: none;
-  }
-  .main-contact-eamil a,
-  .main-contact-tel a,
-  .main-contact-address a {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .main-contact {
-    display: flex;
-    gap: 10px;
-    height: 40vh;
-    width: 200%;
-  }
-  .main-contact-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 56%;
-    height: 12%;
-    margin-top: 0%;
-  }
-  .main-contacts-icons {
-    margin-top: 78%;
-    width: 45%;
-  }
-  .main-contact-eamil,
-  .main-contact-tel,
-  .main-contact-address {
-    width: 60%;
-    height: 70px;
+    width: 55%;
+    height: 40px;
   }
   .main-contact-email-icon,
   .main-contact-tel-icon,
